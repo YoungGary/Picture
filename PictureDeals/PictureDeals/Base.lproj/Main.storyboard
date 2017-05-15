@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1091" translatesAutoresizingMaskIntoConstraints="NO" id="2Gz-V7-3tm">
+                                <rect key="frame" x="67" y="113" width="240" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="xa8-06-6RS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-Je-UaM">
+                                <rect key="frame" x="171.5" y="389" width="31" height="30"/>
+                                <state key="normal" title="还原"/>
+                                <connections>
+                                    <action selector="reserveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z43-p6-LnV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9I-Q6-TjE">
+                                <rect key="frame" x="171.5" y="454" width="31" height="30"/>
+                                <state key="normal" title="美白"/>
+                                <connections>
+                                    <action selector="whiteImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xIz-si-2qd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW3-Jj-qry">
+                                <rect key="frame" x="171.5" y="512" width="31" height="30"/>
+                                <state key="normal" title="灰色"/>
+                                <connections>
+                                    <action selector="gratImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zw5-Jd-gzg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Gz-V7-3tm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="1Ce-Ba-DV0"/>
+                            <constraint firstItem="C9I-Q6-TjE" firstAttribute="top" secondItem="Hsb-Je-UaM" secondAttribute="bottom" constant="35" id="Jb8-ej-9y4"/>
+                            <constraint firstItem="Hsb-Je-UaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N4f-7Q-s7X"/>
+                            <constraint firstAttribute="trailing" secondItem="2Gz-V7-3tm" secondAttribute="trailing" constant="68" id="QYW-q1-cHe"/>
+                            <constraint firstItem="kW3-Jj-qry" firstAttribute="centerX" secondItem="C9I-Q6-TjE" secondAttribute="centerX" id="X9Y-12-s2f"/>
+                            <constraint firstItem="C9I-Q6-TjE" firstAttribute="centerX" secondItem="Hsb-Je-UaM" secondAttribute="centerX" id="Xgr-Po-L3f"/>
+                            <constraint firstItem="kW3-Jj-qry" firstAttribute="top" secondItem="C9I-Q6-TjE" secondAttribute="bottom" constant="28" id="YOl-Cm-bNB"/>
+                            <constraint firstItem="Hsb-Je-UaM" firstAttribute="top" secondItem="2Gz-V7-3tm" secondAttribute="bottom" constant="63" id="i6D-7S-Swt"/>
+                            <constraint firstItem="2Gz-V7-3tm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="km5-US-qHM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="2Gz-V7-3tm" id="8uS-By-KVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_1091" width="600" height="600"/>
+    </resources>
+</document>
